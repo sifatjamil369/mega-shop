@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegisterController">
+    <stylesheets>
+        <URL value="@form.css" />
+    </stylesheets>
+   <children>
+      <Text layoutX="240.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEGA">
+         <font>
+            <Font name="Impact" size="54.0" />
+         </font>
+      </Text>
+      <Text layoutX="238.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SHOPPER">
+         <font>
+            <Font name="Informal Roman" size="31.0" />
+         </font>
+      </Text>
+      <TextField fx:id="emaili" layoutX="228.0" layoutY="209.0" promptText="Email" />
+      <TextField fx:id="namei" layoutX="228.0" layoutY="175.0" promptText="Name" />
+      <Button fx:id="registerbtn" layoutX="317.0" layoutY="326.0" mnemonicParsing="false" onAction="#register" text="Register" />
+      <PasswordField fx:id="passi" layoutX="228.0" layoutY="246.0" promptText="Password" />
+      <PasswordField fx:id="confirmPassi" layoutX="228.0" layoutY="283.0" promptText="Confirm password" />
+      <Button fx:id="backbtn" layoutX="228.0" layoutY="326.0" mnemonicParsing="false" onAction="#back" prefHeight="32.0" prefWidth="60.0" text="Back" />
+   </children>
+</AnchorPane>

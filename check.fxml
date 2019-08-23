@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CheckController">
+    <children>
+        <TableView fx:id="checkTable" layoutX="29.0" layoutY="69.0" prefHeight="278.0" prefWidth="556.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="62.0">
+            <columns>
+                <TableColumn fx:id="idv" prefWidth="138.0" text="ID" />
+                <TableColumn fx:id="pidv" prefWidth="131.0" text="Product ID" />
+                <TableColumn fx:id="uidv" prefWidth="199.0" text="User ID" />
+                <TableColumn fx:id="approvalv" prefWidth="72.0" text="Approval" />
+            </columns>
+        </TableView>
+        <Button fx:id="approve" layoutX="391.0" layoutY="348.0" minHeight="25.0" minWidth="76.0" mnemonicParsing="false" onAction="#approve" prefHeight="29.0" prefWidth="76.0" text="Approve">
+            <padding>
+                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+            </padding></Button>
+        <Text layoutX="254.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Checkout">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Text>
+      <Button fx:id="remove" layoutX="151.0" layoutY="345.0" mnemonicParsing="false" onAction="#remove" prefHeight="32.0" prefWidth="76.0" text="Remove" />
+      <Button fx:id="back" layoutX="29.0" layoutY="25.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <Button fx:id="logout" layoutX="534.0" layoutY="25.0" mnemonicParsing="false" onAction="#logout" text="Log out" />
+    </children>
+    <padding>
+        <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+    </padding>
+</AnchorPane>

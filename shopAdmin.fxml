@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ShopControllerAdmin">
+   <children>
+      <TableView fx:id="shopTable" layoutX="29.0" layoutY="69.0" prefHeight="278.0" prefWidth="556.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="62.0">
+        <columns>
+            <TableColumn fx:id="idv" prefWidth="47.0" text="id" />
+          <TableColumn fx:id="namev" prefWidth="156.0" text="Name" />
+          <TableColumn fx:id="brandv" prefWidth="119.0" text="Brand" />
+            <TableColumn fx:id="categoryv" prefWidth="121.0" text="Category" />
+            <TableColumn fx:id="pricev" minWidth="0.0" prefWidth="98.0" text="Price" />
+        </columns>
+      </TableView>
+      <Button fx:id="removeProd" layoutX="355.0" layoutY="355.0" mnemonicParsing="false" onAction="#removeProd" prefHeight="25.0" prefWidth="63.0" text="Remove" />
+      <Button fx:id="addProd" layoutX="181.0" layoutY="355.0" mnemonicParsing="false" onAction="#addProd" text="Add new" />
+      <Text layoutX="244.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mega Shop">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button fx:id="logout" layoutX="29.0" layoutY="16.0" mnemonicParsing="false" onAction="#logout" text="Log out" />
+      <Button fx:id="order" layoutX="519.0" layoutY="16.0" mnemonicParsing="false" onAction="#order" text="Orders" />
+      <Button fx:id="edit" layoutX="268.0" layoutY="355.0" mnemonicParsing="false" onAction="#edit" prefHeight="25.0" prefWidth="63.0" text="Edit" />
+   </children>
+   <padding>
+      <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+   </padding>
+</AnchorPane>

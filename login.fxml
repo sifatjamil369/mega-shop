@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <children>
+      <TextField fx:id="emaili" layoutX="218.0" layoutY="188.0" promptText="Email" />
+      <PasswordField fx:id="passi" layoutX="218.0" layoutY="230.0" onAction="#login" promptText="Password" />
+      <Button fx:id="loginbtn" layoutX="266.0" layoutY="274.0" mnemonicParsing="false" onAction="#login" text="Login" />
+      <Text layoutX="203.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account? " />
+      <Text layoutX="230.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEGA">
+         <font>
+            <Font name="Impact" size="54.0" />
+         </font>
+      </Text>
+      <Text layoutX="228.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SHOPPER">
+         <font>
+            <Font name="Informal Roman" size="31.0" />
+         </font>
+      </Text>
+      <Button fx:id="registerbtn" layoutX="350.0" layoutY="318.0" mnemonicParsing="false" onAction="#register" opacity="0.89" text="Click here!" />
+   </children>
+</AnchorPane>
